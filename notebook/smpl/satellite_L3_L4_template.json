@@ -1,0 +1,219 @@
+{
+    "dimensions": {
+        "time": 1,
+        "lat": 9000,
+        "lon": 18000
+    },
+    "variables": {
+        "time": {
+            "type": "int",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "reference time of sst file",
+                "units": "seconds since 1981-01-01 00:00:00",
+                "comment": "seconds since 1981-01-01 00:00:00",
+                "standard_name": "time",
+                "calendar": "Gregorian",
+                "axis": "T",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "lat": {
+            "type": "float",
+            "dimensions": [
+                "lat"
+            ],
+            "attributes": {
+                "long_name": "latitude",
+                "comment": "Latitude for locating data",
+                "units": "degrees_north",
+                "axis": "Y",
+                "valid_min": -90,
+                "valid_max": 90,
+                "standard_name": "latitude",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "lon": {
+            "type": "float",
+            "dimensions": [
+                "lon"
+            ],
+            "attributes": {
+                "long_name": "longitude",
+                "comment": "Longitude for locating data",
+                "units": "degrees_east",
+                "axis": "X",
+                "valid_min": -180,
+                "valid_max": 180,
+                "standard_name": "longitude",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "example_sea_surface_temperature": {
+            "type": "short",
+            "dimensions": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "attributes": {
+                "add_offset": 273.15,
+                "comment": " ",
+                "coordinates": "lon lat",
+                "long_name": "sea surface sub-skin temperature",
+                "scale_factor": 0.01,
+                "source": "",
+                "units": "kelvin",
+                "valid_max": 32767,
+                "valid_min": -200,
+                "_FillValue": -32768,
+                "standard_name": "sea_surface_subskin_temperature",
+                "coverage_content_type": "physicalMeasurement",
+                "grid_mapping": "crs"
+            }
+        },
+        "example_quality_level": {
+            "type": "byte",
+            "dimensions": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "attributes": {
+                "long_name": "quality level of SST pixel",
+                "coordinates": "lon lat",
+                "grid_mapping": "crs",
+                "_FillValue": -128,
+                "valid_min": 0,
+                "valid_max": 5,
+                "flag_meanings": "no_data bad_data not_used not_used not_used best_quality",
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "comment": "",
+                "coverage_content_type": "qualityInformation"
+            }
+        },
+        "example_l2p_flags": {
+            "type": "short",
+            "dimensions": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "attributes": {
+                "long_name": "L2P flags",
+                "coordinates": "lon lat",
+                "valid_min": -32768,
+                "valid_max": 32767,
+                "flag_meanings": "microwave land ice invalid day land glint ice clear probably_clear cloudy cloud_mask_defined",
+                "flag_masks": [
+                    1,
+                    2,
+                    4,
+		    8,
+		    16,
+		    32,
+		    64,
+		    128,
+                    256,
+                    512,
+                    1024,
+                    2048
+                ],
+                "comment": "",
+                "grid_mapping": "crs",
+                "coverage_content_type": "thematicClassification"
+            }
+        },
+        "example_wind_speed": {
+            "type": "byte",
+            "dimensions": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "attributes": {
+                "long_name": "wind speed",
+                "standard_name": "wind_speed",
+                "units": "m s-1",
+                "height": "10 m",
+                "_FillValue": -128,
+                "add_offset": 0,
+                "scale_factor": 0.15,
+                "valid_min": -127,
+                "valid_max": 127,
+                "coordinates": "lon lat",
+                "grid_mapping": "crs",
+                "source": "",
+                "comment": "",
+                "coverage_content_type": "auxiliaryInformation"
+            }
+    },
+        "example_crs": {
+            "type": "int",
+            "dimensions": [],
+            "attributes": {
+                "grid_mapping_name": "latitude_longitude",
+                "horizontal_datum_name": "World Geodetic System 1984",
+                "reference_ellipsoid_name": "WGS84",
+                "prime_meridian_name": "Greenwich",
+                "long_name": "coordinate reference system"
+            }
+      }
+    },
+    "global_attributes": {
+        "source": "",
+        "acknowledgement": "",
+        "cdm_data_type": "grid",
+        "comment": "",
+        "creator_email": "",
+        "creator_name": "",
+        "creator_url": "",
+        "geospatial_lat_resolution": 0.02,
+        "geospatial_lat_units": "degrees_north",
+        "geospatial_lon_resolution": 0.02,
+        "geospatial_lon_units": "degrees_east",
+        "history": "",
+        "institution": "",
+        "keywords": "",
+        "keywords_vocabulary": "",
+        "license": "",
+        "naming_authority": "",
+        "product_version": "",
+        "project": "",
+        "publisher_email": "",
+        "publisher_name": "",
+        "publisher_url": "",
+        "references": "",
+        "spatial_resolution": "0.02 deg",
+        "standard_name_vocabulary": "CF Standard Name Table (v26, 08 November 2013)",
+        "Conventions": "CF-1.7, ACDD-1.3",
+        "metadata_link": "",
+        "processing_level": "L3",
+        "summary": "",
+        "start_time": "YYYY-MM-DDT00:00:00Z",
+        "time_coverage_start":"YYYY-MM-DDT00:00:00Z", 
+        "stop_time":"YYYY-MM-DDT00:00:00Z", 
+        "time_coverage_end": "YYYY-MM-DDT00:00:00Z",
+        "date_created": "YYYY-MM-DDT00:00:00Z",
+        "geospatial_lon_min": -179.99,
+        "geospatial_lon_max": 179.99,
+        "geospatial_lat_min": -89.99,
+        "geospatial_lat_max": 89.99,
+        "title": "",
+        "id": "",
+        "sensor": "",
+        "instrument": "",
+        "platform": "",
+        "uuid": ""
+    }
+}

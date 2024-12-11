@@ -1,0 +1,176 @@
+{
+    "dimensions": {
+        "altitude": 500,
+        "profilenumber": 1
+    },
+    "variables": {
+        "longitude": {
+            "type": "double",
+            "dimensions": [
+                "altitude"
+            ],
+            "attributes": {
+                "FillValue": -9999,
+                "units": "degrees_east",
+                "long_name": "GPS longitude of observation",
+                "standard_name": "longitude",
+                "_CoordinateAxisType": "Lon",
+                "coverage_content_type": "coordinate",
+                "axis": "X"
+            }
+        },
+        "latitude": {
+            "type": "double",
+            "dimensions": [
+                "altitude"
+            ],
+            "attributes": {
+                "FillValue": -9999,
+                "units": "degrees_north",
+                "long_name": "GPS latitude of observation",
+                "standard_name": "latitude",
+                "_CoordinateAxisType": "Lat",
+                "coverage_content_type": "coordinate",
+                "axis": "Y"
+            }
+        },
+        "time": {
+            "type": "double",
+            "dimensions": [
+                "altitude"
+            ],
+            "attributes": {
+                "FillValue": -9999,
+                "units": "days since 1950-01-01T00:00:00",
+                "long_name": "Time of observation",
+                "standard_name": "time",
+                "_CoordinateAxisType": "Time",
+                "coverage_content_type": "coordinate",
+                "axis": "T"
+            }
+        },
+        "altitude": {
+            "type": "double",
+            "dimensions": [
+                "altitude"
+            ],
+            "attributes": {
+                "units": "meters",
+                "long_name": "GPS altitude above ground level",
+                "standard_name": "altitude",
+                "_CoordinateAxisType": "Z",
+                "coverage_content_type": "coordinate",
+                "positive": "up"
+            }
+        },
+        "example_id": {
+            "type": "double",
+            "dimensions": [
+                "profilenumber"
+            ],
+            "attributes": {
+                "long_name": "Sonde ID or Serial Number",
+                "standard_name": "serial_number_id",
+                "coverage_content_type": "referenceInformation"
+            }
+        },
+        "example_air_temp": {
+            "type": "double",
+            "dimensions": [
+                "altitude"
+            ],
+            "attributes": {
+                "FillValue": -9999,
+                "long_name": "Air Temperature",
+                "standard_name": "air_temperature",
+                "coordinates": "time altitude longitude latitude",
+                "units": "degrees_Celsius",
+                "coverage_content_type": "physicalMeasurement",
+                "valid_max": 100,
+                "valid_min": -273.15,
+                "add_offset": 0,
+                "scale_factor": 1
+            }
+        },
+        "example_quality_flag": {
+            "type": "double",
+            "dimensions": [
+                "altitude"
+            ],
+            "attributes": {
+                "long_name": "Quality Flag",
+                "flag_values": "-1.0, 0.0, 1.0",
+                "flag_meanings": "bad questionable good",
+                "standard_name": "quality_flag",
+                "coverage_content_type": "qualityInformation"
+            }
+        }
+    },
+    "global_attributes": {
+        "title": "",
+        "summary": "",
+        "keywords": "",
+        "keywords_vocabulary": "CF Standard Names, GCMD Science Keywords",
+        "Conventions": "CF-1.8, ACDD-1.3",
+        "uuid": "",
+        "history": "",
+        "comment": "",
+        "standard_name_vocabulary": "CF Standard Name Table v72",
+        "product_version": "",
+        "creator_name": "",
+        "creator_email": "",
+        "creator_institution": "",
+        "creator_type": "",
+        "institution": "",
+        "project": "",
+        "publisher_name": "Physical Oceanography Distributed Active Archive Center, Jet Propulsion Laboratory, NASA",
+        "publisher_email": "podaac@podaac.jpl.nasa.gov",
+        "publisher_url": "https://podaac.jpl.nasa.gov",
+        "publisher_type": "Institution",
+        "publisher_institution": "NASA/JPL/PODAAC",
+        "geospatial_lat_min": 0,
+        "geospatial_lat_max": 0,
+        "geospatial_lat_resolution": "",
+        "geospatial_lon_min": 0,
+        "geospatial_lon_max": 0,
+        "geospatial_lon_resolution": "",
+        "geospatial_vertical_min": 0,
+        "geospatial_vertical_max": 0,
+        "geospatial_vertical_resolution": 0,
+        "geospatial_vertical_units": "meters",
+        "geospatial_vertical_positive": "up",
+        "time_coverage_resolution": "0",
+        "featureType": "profile",
+        "cdm_data_type": "Station",
+        "platform": "",
+        "platform_vocabulary": "GCMD platform keywords",
+        "instrument": "",
+        "instrument_vocabulary": "GCMD instrument keywords",
+        "metadata_link": "",
+        "sea_name": "",
+        "program": "",
+        "data_type": "",
+        "data_set": "",
+        "version": "",
+        "site_name": "",
+        "site_short_name": "",
+        "sonde_type": " ",
+        "naming_authority": "gov.nasa",
+        "license": "Issued under Creative Commons CC BY 4.0: https://creativecommons.org/licenses/by/4.0/",
+        "DOI": "",
+        "contributor_name": "",
+        "contributor_role": "",
+        "source": "",
+        "processing_level": "",
+        "geospatial_lat_units": "degrees_north",
+        "geospatial_lon_units": "degrees_east",
+        "time_coverage_start": "YYYY-MM-DDT00:00:00Z",
+        "time_coverage_end": "YYYY-MM-DDT00:00:00Z",
+        "date_created": "YYYY-MM-DDT00:00:00Z",
+        "date_modified": "YYYY-MM-DDT00:00:00Z",
+        "date_issued": "YYYY-MM-DDT00:00:00Z",
+        "date_metadata_modified": "YYYY-MM-DDT00:00:00Z",
+        "acknowledgement": "",
+        "id": "COLLECTION_SHORTNAME"
+    }
+}
