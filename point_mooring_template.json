@@ -1,0 +1,169 @@
+{
+    "dimensions": {
+        "time": 9133,
+        "latitude": 1,
+        "longitude": 1
+    },
+    "variables": {
+        "time": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "time",
+                "standard_name": "time",
+                "units": "days since 1950-01-01 00:00:00",
+                "calendar": "gregorian",
+                "valid_min": 0,
+                "valid_max": 0,
+                "axis": "T",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "latitude": {
+            "type": "double",
+            "dimensions": [
+                "latitude"
+            ],
+            "attributes": {
+                "long_name": "Mooring anchor latitude",
+                "standard_name": "latitude",
+                "units": "degrees_north",
+                "valid_min": -90,
+                "valid_max": 90,
+                "axis": "Y",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "longitude": {
+            "type": "double",
+            "dimensions": [
+                "longitude"
+            ],
+            "attributes": {
+                "long_name": "Mooring anchor longitude",
+                "standard_name": "longitude",
+                "units": "degrees_east",
+                "valid_min": -180,
+                "valid_max": 180,
+                "axis": "X",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "depth": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "depth coordinate of tskin",
+                "standard_name": "depth",
+                "units": "meters",
+                "positive": "down",
+                "axis": "Z",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "example_tskin": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "FillValue": 1e+35,
+                "long_name": "SST adjusted to skin",
+                "standard_name": "sea_surface_skin_temperature",
+                "units": "degree",
+                "coverage_content_type": "physicalMeasurement"
+            }
+        },
+        "example_id": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "Mooring ID",
+                "standard_name": "mooring_id",
+                "coverage_content_type": "referenceInformation"
+            }
+        },
+        "example_quality_flag": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "Quality Flag",
+                "flag_values": "-1.0, 0.0, 1.0",
+                "flag_meanings": "bad questionable good",
+                "standard_name": "quality_flag",
+                "coverage_content_type": "qualityInformation"
+            }
+        }
+    },   
+    "global_attributes": {
+        "data_type": "",
+        "Conventions": "CF 1.6, ACDD 1.2",
+        "Metadata_Conventions": "Unidata Dataset Discovery v1.2",
+        "netcdf_version": "",
+        "format_version": "",
+        "institution": "",
+        "source": "",
+        "cdm_data_type": "",
+        "distribution_statement": "",
+        "license": "",
+        "institution_references": "",
+        "keywords_vocabulary": "GCMD platform keywords",
+        "keywords": "",
+        "keywords_vocabulary_URL": "",
+        "standard_name_vocabulary": "",
+        "title": "",
+        "project": "",
+        "platform_code": "",
+        "id": "COLLECTION_SHORTNAME",
+        "summary": "",
+        "pi_name": "",
+        "principal_investigator": "",
+        "author": "",
+        "contact": "",
+        "references": "",
+        "citation": "",
+        "acknowledgment": "",
+        "creator_name": "",
+        "creator_url": "",
+        "creator_email": "",
+        "publisher_name": "Physical Oceanography Distributed Active Archive Center, Jet Propulsion Laboratory, NASA",
+        "publisher_email": "podaac@podaac.jpl.nasa.gov",
+        "publisher_url": "https://podaac.jpl.nasa.gov",
+        "publisher_type": "Institution",
+        "publisher_institution": "NASA/JPL/PODAAC",
+        "contributor_name": "",
+        "contributor_role": "",
+        "date_created": "YYYY-MM-DDT00:00:00Z",
+        "date_modified": "YYYY-MM-DDT00:00:00Z",
+        "date_issued": "YYYY-MM-DDT00:00:00Z",
+        "date_update": "YYYY-MM-DDT00:00:00Z",
+        "history": "",
+        "comment": "",
+        "processing_level": "",
+        "geospatial_lat_min": "0",
+        "geospatial_lat_max": "0",
+        "geospatial_lat_resolution": "point",
+        "geospatial_lat_units": "degrees_north",
+        "geospatial_lon_min": "0",
+        "geospatial_lon_max": "0",
+        "geospatial_lon_resolution": "point",
+        "geospatial_lon_units": "degrees_east",
+        "geospatial_vertical_min": "0",
+        "geospatial_vertical_max": "0",
+        "geospatial_vertical_units": "meters",
+        "geospatial_vertical_positive": "up",
+        "geospatial_vertical_resolution": "point",
+        "time_coverage_start": "YYYY-MM-DDT00:00:00Z",
+        "time_coverage_end": "YYYY-MM-DDT00:00:00Z",
+        "time_coverage_duration": "P1D",
+        "time_coverage_resolution": "P60.00M"
+    }
+}

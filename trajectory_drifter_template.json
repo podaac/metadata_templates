@@ -1,0 +1,146 @@
+{
+    "dimensions": {
+        "time": 54
+    },
+    "variables": {
+        "time": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "Time of Salinity Drifter measurement",
+                "axis": "T",
+                "standard_name": "time",
+                "units": "days since 1950-01-01T00:00:00",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "longitude": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "_FillValue": -9999,
+                "long_name": "Longitude of Salinity Drifter measurement",
+                "valid_max": 180,
+                "valid_min": -180,
+                "axis": "X",
+                "standard_name": "longitude",
+                "units": "degrees_east",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "latitude": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "_FillValue": -9999,
+                "long_name": "Latitude of Salinity Drifter measurement",
+                "valid_max": 90,
+                "valid_min": -90,
+                "axis": "Y",
+                "standard_name": "latitude",
+                "units": "degrees_north",
+                "coverage_content_type": "coordinate"
+            }
+        },
+        "example_temperature_at_18cm": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "_FillValue": -9999,
+                "long_name": "Sea water temperature at 18cm",
+                "valid_max": 28.03,
+                "valid_min": 26.67,
+                "coordinates": "time latitude longitude",
+                "standard_name": "sea_water_temperature",
+                "units": "degrees_C",
+                "coverage_content_type": "physicalMeasurement"
+            }
+        },
+        "example_quality_flag": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "Quality Flag",
+                "flag_values": "-1.0, 0.0, 1.0",
+                "flag_meanings": "bad questionable good",
+                "standard_name": "quality_flag",
+                "coverage_content_type": "qualityInformation"
+            }
+        },
+        "example_id": {
+            "type": "double",
+            "dimensions": [
+                "time"
+            ],
+            "attributes": {
+                "long_name": "Drifter ID",
+                "standard_name": "drifter_id",
+                "coverage_content_type": "referenceInformation"
+            }
+        }
+    },
+    "global_attributes": {
+        "Conventions": "CF-1.6, ACDD 1.3",
+        "Metadata_Conventions": "Unidata Dataset Discovery v1.3",
+        "featureType": "trajectory",
+        "cdm_data_type": "Trajectory",
+        "nodc_template_version": "NODC_NetCDF_trajectory_Template_v2.0",
+        "standard_name_vocabulary": "CF Standard Name Table v27",
+        "title": "",
+        "summary": "",
+        "source": "",
+        "platform": "Drifter",
+        "instrument": "",
+        "uuid": "",
+        "id": "COLLECTION_SHORTNAME",
+        "metadata_link": "",
+        "references": "",
+        "sea_name": "",
+        "naming_authority": "",
+        "time_coverage_start": "YYYY-MM-DDT00:00:00Z",
+        "time_coverage_end": "YYYY-MM-DDT00:00:00Z",
+        "time_coverage_resolution": "PT1S",
+        "geospatial_lat_min": -90,
+        "geospatial_lat_max": 90,
+        "geospatial_lat_units": "degrees_north",
+        "geospatial_lat_resolution": "0.1 degree",
+        "geospatial_lon_min": -180,
+        "geospatial_lon_max": 180,
+        "geospatial_lon_units": "degrees_east",
+        "geospatial_lon_resolution": "0.1 degree",
+        "institution": "",
+        "publisher_name": "Physical Oceanography Distributed Active Archive Center, Jet Propulsion Laboratory, NASA",
+        "publisher_email": "podaac@podaac.jpl.nasa.gov",
+        "publisher_url": "https://podaac.jpl.nasa.gov",
+        "publisher_type": "Institution",
+        "publisher_institution": "NASA/JPL/PODAAC",
+        "creator_type": "",
+        "creator_institution": "",
+        "creator_email": "",
+        "creator_name": "",
+        "creator_role": "",
+        "project": "",
+        "processing_level": "",
+        "keywords_vocabulary": "CF Standard Names, GCMD Science Keywords",
+        "keywords": "",
+        "acknowledgement": "",
+        "date_created": "YYYY-MM-DDT00:00:00Z",
+        "date_modified": "YYYY-MM-DDT00:00:00Z",
+        "date_issued": "YYYY-MM-DDT00:00:00Z",
+        "date_metadata_modified": "YYYY-MM-DDT00:00:00Z",
+        "program": "",
+        "product_version": "",
+        "license": "",
+        "comment": ""
+    }
+}
