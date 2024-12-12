@@ -7,3 +7,4 @@ The templates are designed to be used in an operational manner as a sets of key/
 
 An example of how to use the templates in an operational and programatic sense is provided in the accompanying notebook tutorial. 
  
+![N|Solid](https://podaac.jpl.nasa.gov/sites/default/files/image/custom_thumbs/podaac_logo.png)
