@@ -5,6 +5,6 @@ These include different templates for Level 2, L3 and L4 satellite/airborne prod
 
 The templates are designed to be used in an operational manner as a sets of key/value pairs.  The template provides the "key" (CF or ACDD metadata attribute) while a separate data processing program provides the "value". 
 
-An example of how to use the templates in an operational and programatic sense is provided in the accompanying notebook tutorial. 
+An example of how to use the templates in an operational and programatic approach is provided in the accompanying notebook tutorial. 
  
 ![N|Solid](https://podaac.jpl.nasa.gov/sites/default/files/image/custom_thumbs/podaac_logo.png)
